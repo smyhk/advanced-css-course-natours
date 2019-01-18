@@ -6,14 +6,15 @@
 @import 'base/animations';
 @import 'base/typography';
 @import 'base/utilities';
+@import 'base/typography';
 
 @import 'components/button';
 @import 'components/composition';
 @import 'components/feature-box';
 @import 'components/card';
+@import 'components/stories';
 
 @import 'layout/header';
-@import 'base/typography';
-@import 'pages/home';
-
 @import 'layout/grid';
+
+@import 'pages/home';

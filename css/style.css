@@ -1,3 +1,17 @@
+/* 0 - 600px: Phone
+ * 600 - 900px: Tablet Portrait
+ * 900 - 1200px: Tablet Landscape
+ * 1200 - 1800px: Normal styles apply (Desktop first approach)
+ * 1800px + : Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+*/
 /* Browser reset with universal selector ***************************/
 *,
 *::after,
@@ -9,6 +23,15 @@
 /* Set the root font size for a single rem */
 html {
   font-size: 62.5%; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box; }
@@ -711,7 +734,6 @@ body {
   top: 0;
   transform: rotate(-135deg); }
 
-/* Header */
 .header {
   height: 95vh;
   /* 95% of viewport height */

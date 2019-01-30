@@ -11,6 +11,11 @@
     }
   }
 
+  @include respond(tab-port) {
+    max-width: 50rem;
+    padding: 0 3rem;
+  }
+
   @include clearfix;
 
   // Attribute selector - ^ select all classes that begin with col-
@@ -25,6 +30,7 @@
 
       @include respond(tab-port) {
         margin-right: 0;
+        margin-bottom: $gutter-vertical-sm;
       }
     }
 

@@ -32,5 +32,10 @@ html {
 
 body {
   box-sizing: border-box;
+  padding: 3rem; /* pads the entire body for border effect */
+
+  @include respond(tab-port) {
+    padding: 0;
+  }
 }
 /******************************************************************/
